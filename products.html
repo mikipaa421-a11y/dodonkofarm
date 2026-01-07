@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品 | ドドンコ農園</title>
+    <meta name="description" content="ドドンコ農園で育てている季節の野菜をご紹介します。">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <style>
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-md);
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: var(--spacing-sm);
+        }
+
+        .product-name {
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-bottom: 5px;
+            color: var(--color-accent-green);
+        }
+
+        .product-season {
+            font-size: 0.8rem;
+            color: #999;
+            background: #eee;
+            padding: 2px 8px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="header" class="scrolled">
+        <a href="index.html" class="logo">ドドンコ農園</a>
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="philosophy.html">こだわり</a></li>
+                <li><a href="products.html">商品</a></li>
+                <li><a href="about.html">会社概要・お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main style="padding-top: 100px;">
+        <div class="container section fade-in-up">
+            <h1 class="font-serif section-title" style="text-align: center; margin-bottom: var(--spacing-lg);">季節の野菜
+            </h1>
+
+            <div style="margin-bottom: var(--spacing-lg); text-align: center;">
+                <img src="assets/images/products_main.png" alt="新鮮な野菜たち"
+                    style="width: 100%; max-width: 800px; max-height: 400px; object-fit: cover; border-radius: 4px; border: 1px solid #eee;">
+                <p style="margin-top: var(--spacing-md); max-width: 600px; margin-left: auto; margin-right: auto;">
+                    露地栽培を中心に、その季節に最も美味しく育つ旬の野菜をお届けします。<br>
+                    味が濃く、栄養価の高いドドンコ農園の自信作です。
+                </p>
+            </div>
+
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div
+                        style="background-color: #e0f2f1; height: 200px; display: flex; align-items: center; justify-content: center; color: #00897b;">
+                        <!-- Placeholder for actual product image if available later, using CSS pattern for now -->
+                        <span style="font-size: 3rem;">🍅</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-season">夏</span>
+                        <h3 class="product-name">完熟トマト</h3>
+                        <p style="font-size: 0.9rem; line-height: 1.6;">木の上で真っ赤になるまで完熟させた、甘みと酸味のバランスが絶妙なトマトです。</p>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div
+                        style="background-color: #fff3e0; height: 200px; display: flex; align-items: center; justify-content: center; color: #ef6c00;">
+                        <span style="font-size: 3rem;">🥕</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-season">冬</span>
+                        <h3 class="product-name">雪下ニンジン</h3>
+                        <p style="font-size: 0.9rem; line-height: 1.6;">雪の下で越冬させることで、フルーツのように甘くなった特別なニンジンです。</p>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div
+                        style="background-color: #f1f8e9; height: 200px; display: flex; align-items: center; justify-content: center; color: #558b2f;">
+                        <span style="font-size: 3rem;">🥦</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-season">秋〜冬</span>
+                        <h3 class="product-name">朝採れブロッコリー</h3>
+                        <p style="font-size: 0.9rem; line-height: 1.6;">茎まで柔らかく甘い。早朝に収穫してその日のうちに発送します。</p>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div
+                        style="background-color: #f3e5f5; height: 200px; display: flex; align-items: center; justify-content: center; color: #6a1b9a;">
+                        <span style="font-size: 3rem;">🍆</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-season">夏〜秋</span>
+                        <h3 class="product-name">とろとろナス</h3>
+                        <p style="font-size: 0.9rem; line-height: 1.6;">加熱するとトロトロの食感に。焼きナスや揚げ浸しに最高です。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                style="text-align: center; margin-top: var(--spacing-lg); padding: var(--spacing-md); background: #f9f9f9; border-radius: 4px;">
+                <h3 class="font-serif" style="margin-bottom: var(--spacing-sm);">ご注文について</h3>
+                <p>
+                    旬の野菜セットの定期便、または単品でのご注文が可能です。<br>
+                    詳細なご注文方法や送料については、お問い合わせください。
+                </p>
+                <a href="about.html"
+                    style="display: inline-block; margin-top: var(--spacing-sm); color: var(--color-accent-green); font-weight: bold; text-decoration: underline;">お問い合わせはこちら</a>
+            </div>
+        </div>
+    </main>
+
+    <footer
+        style="background-color: var(--color-accent-brown); color: white; padding: var(--spacing-lg) 0; text-align: center;">
+        <div class="container">
+            <h2 class="font-serif" style="margin-bottom: var(--spacing-sm);">ドドンコ農園</h2>
+            <p style="font-size: 0.9rem; opacity: 0.8;">〒000-0000 〇〇県〇〇市ドドンコ町1-1</p>
+            <div style="margin-top: var(--spacing-md);">
+                <small>&copy; 2024 Dodonko Farm. All Rights Reserved.</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

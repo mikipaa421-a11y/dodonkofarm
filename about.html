@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>会社概要・お問い合わせ | ドドンコ農園</title>
+    <meta name="description" content="ドドンコ農園の会社概要と、お問い合わせフォームです。">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <style>
+        .table-row {
+            display: flex;
+            border-bottom: 1px solid #eee;
+            padding: 15px 0;
+        }
+
+        .table-head {
+            width: 150px;
+            font-weight: bold;
+            color: var(--color-accent-brown);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        .form-input,
+        .form-textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        .form-textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            background-color: var(--color-accent-green);
+            color: white;
+            border: none;
+            padding: 12px 40px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 2px;
+            transition: background-color 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #2e7d32;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="header" class="scrolled">
+        <a href="index.html" class="logo">ドドンコ農園</a>
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="philosophy.html">こだわり</a></li>
+                <li><a href="products.html">商品</a></li>
+                <li><a href="about.html">会社概要・お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main style="padding-top: 100px;">
+
+        <!-- Company Profile -->
+        <section class="container section fade-in-up">
+            <h1 class="font-serif section-title" style="text-align: center; margin-bottom: var(--spacing-lg);">会社概要</h1>
+
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="table-row">
+                    <div class="table-head">農園名</div>
+                    <div>ドドンコ農園</div>
+                </div>
+                <div class="table-row">
+                    <div class="table-head">代表者</div>
+                    <div>土土乃子 太郎</div>
+                </div>
+                <div class="table-row">
+                    <div class="table-head">所在地</div>
+                    <div>〒000-0000<br>〇〇県〇〇市ドドンコ町1-1</div>
+                </div>
+                <div class="table-row">
+                    <div class="table-head">設立</div>
+                    <div>2010年4月</div>
+                </div>
+                <div class="table-row">
+                    <div class="table-head">事業内容</div>
+                    <div>有機野菜の生産・販売、農業体験イベントの企画・運営</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Access Map -->
+        <section class="section" style="background-color: #fafafa; padding: var(--spacing-lg) 0;">
+            <div class="container fade-in-up">
+                <h2 class="font-serif section-title" style="text-align: center; margin-bottom: var(--spacing-md);">アクセス
+                </h2>
+                <div
+                    style="max-width: 800px; margin: 0 auto; height: 400px; background-color: #ddd; display: flex; align-items: center; justify-content: center; border-radius: 4px;">
+                    <!-- Placeholder for Map -->
+                    <p style="color: #666;">Google Map Placeholder</p>
+                </div>
+                <p style="text-align: center; margin-top: var(--spacing-sm);">
+                    お車でお越しの場合：〇〇ICより約15分<br>
+                    公共交通機関の場合：JR〇〇駅よりバスで20分「ドドンコ農園前」下車すぐ
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="container section fade-in-up">
+            <h2 class="font-serif section-title" style="text-align: center; margin-bottom: var(--spacing-lg);">お問い合わせ
+            </h2>
+            <p style="text-align: center; margin-bottom: var(--spacing-md);">
+                野菜のご注文、イベントのお申し込み、その他ご質問など、<br>お気軽にお問い合わせください。
+            </p>
+
+            <form style="max-width: 600px; margin: 0 auto;">
+                <div class="form-group">
+                    <label class="form-label">お名前 <span style="color: red;">*</span></label>
+                    <input type="text" class="form-input" required placeholder="例）土土乃子 花子">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">メールアドレス <span style="color: red;">*</span></label>
+                    <input type="email" class="form-input" required placeholder="例）info@dodonko.com">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">電話番号</label>
+                    <input type="tel" class="form-input" placeholder="例）090-0000-0000">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">お問い合わせ内容 <span style="color: red;">*</span></label>
+                    <textarea class="form-textarea" required placeholder="ご自由にご記入ください"></textarea>
+                </div>
+                <div style="text-align: center;">
+                    <button type="submit" class="submit-btn">送信する</button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <footer
+        style="background-color: var(--color-accent-brown); color: white; padding: var(--spacing-lg) 0; text-align: center;">
+        <div class="container">
+            <h2 class="font-serif" style="margin-bottom: var(--spacing-sm);">ドドンコ農園</h2>
+            <p style="font-size: 0.9rem; opacity: 0.8;">〒000-0000 〇〇県〇〇市ドドンコ町1-1</p>
+            <div style="margin-top: var(--spacing-md);">
+                <small>&copy; 2024 Dodonko Farm. All Rights Reserved.</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
